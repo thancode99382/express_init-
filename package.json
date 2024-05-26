@@ -1,0 +1,32 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon --inspect app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thancode99382/express_init-.git"
+  },
+  "keywords": [
+    "express",
+    "blog",
+    "nodejs",
+    "sevencode"
+  ],
+  "author": "vandat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thancode99382/express_init-/issues"
+  },
+  "homepage": "https://github.com/thancode99382/express_init-#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.1"
+  }
+}

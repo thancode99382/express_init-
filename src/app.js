@@ -1,15 +1,15 @@
 const { engine } = require('express-handlebars');
-
-
-
 const path = require('path')
 const express = require('express')
 const morgan = require('morgan')
 const { create,ExpressHandlebars} = require('express-handlebars');
+
+
+
+
+
 const app = express()
 const hbs = create()
-
-
 
 // Using the engine factory:
 engine({ /* config */ });
@@ -25,6 +25,9 @@ hbs.getPartials().then(function(partials){
 })
 // port 
 const port = 3000
+// config file static
+app.use(express.static(path.join(__dirname,'public')))
+
 
 app.use(morgan('combined'))
 // sets up Handlebars as the template engine.
